@@ -9,7 +9,7 @@ body {
     border: 0px
 }
 nav{
-    width: 960px;
+    max-width: 960px;
     height: 60px;
     margin: 0 auto;
     padding-right: 20px;
@@ -102,7 +102,7 @@ input[type=submit]:hover {
   background-color:#ffffff;
   border-color: #dddddd;
   padding: 20px;
-  width: 960px;
+  max-width: 960px;
   flex: 1 0 auto;
   margin: auto;
   height: auto;
@@ -112,7 +112,7 @@ input[type=submit]:hover {
   background-color:#ffffff;
   border-color: #dddddd;
   padding: 20px;
-  width: 960px;
+  max-width: 960px;
   flex: 1 0 auto;
   margin: auto;
   height: 850px;
@@ -186,22 +186,121 @@ h3{
 .pix5{
   float: left;
 }
-@media screen and (max-width: 960px){
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 640px) {
+#image{
+  margin-left: 25px;
+  float: left;
+  padding: 20px;
+  width: 40%;
+} 
+p{
+  margin-top: 15px;
+  display: -webkit-inline-box;
+}
+.container{
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+}
+ul{
+  padding-top: 100px;
+  position: fixed;
+  max-width: 640px;
+  width: 100%;
+}
+.white-box{
+  height: 140px;
+  max-width: 640px ;
+  background-color: white;
+  border-bottom: 1px solid rgb(202,202, 202);
+}
+nav {
+  height: 70px;
+  max-width:645px;
+}
+.main_content{
+  margin: 0 30px;
+  padding: 20px;
+  height: 980px;
+  width: 568px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.main_content1{
+  margin: 0 30px;
+  padding: 20px;
+  height: auto;
+  width: 568px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.wrap{
+  height: auto;
+  max-width: 645px ;
+  margin: 0 auto -90px;
+  min-height: 100%;
+  padding: 0 0 120px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+h2{
+  padding: 25px;
+  background-color: #4aaaa5;
+  width: 100%;
+  max-width: 640px;
+  min-width: 640px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  margin-left: 8px;
+  border-color: #cccccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.pix1, .pix2, .pix3, .pix4, .pix5 {
+  float: left;
+  margin-left: 5px;
+  padding-bottom: 15px;
+}
 }
 
-@media screen and (max-width: 768px){
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  nav{
+    margin: 0 auto;
+    height: 60px;
+    width: 960px;
+    padding-right: 20px;
+  }
+  ul{
+    float: right;
+    display: flex;
+    margin-right: 210px;
+    padding-top: 23px; 
+  }
+  /* .main_content{
+    margin: 0 30px;
+    padding: 20px;
+    height: 475px;
+    width: 700px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  } */
+  h1{
+    margin-left: 30px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 980px) {
+  
 }
-@media screen and (max-width: 640px) {
-
-}
-
-
-
-
-
-
 
 
 
